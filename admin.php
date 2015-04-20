@@ -40,7 +40,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">PROCERTIS S.R.L</a>
+            <a class="navbar-brand page-scroll" href="#page-top"><b>ADMIN</b> PROCERTIS S.R.L</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -49,7 +49,7 @@
                     <a href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="index.html">&#206;napoi la site</a>
+                    <a class="page-scroll" href="index.php">&#206;napoi la site</a>
                 </li>
             </ul>
         </div>
@@ -60,40 +60,40 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
-            <ul class="nav nav-pills nav-stacked">
-                <li role="presentation"><a href="#imagini" aria-controls="imagini" role="tab" data-toggle="tab">Imagini <span class="sr-only">(current)</span></a></li>
-                <li role="presentation"><a href="#parola" aria-controls="parola" role="tab" data-toggle="tab">Parola</a></li>
-                <li role="presentation"><a href="#" aria-controls="home" role="tab" data-toggle="tab">Analytics</a></li>
-                <li role="presentation"><a href="#" aria-controls="home" role="tab" data-toggle="tab">Export</a></li>
+            <ul class="nav nav-pills nav-stacked" style="font-size: 14pt;">
+                <li role="presentation"><a href="#imagini" aria-controls="imagini" role="tab" data-toggle="tab">Galerie</a></li>
+                <li role="presentation"><a href="#lucrari" aria-controls="lucrari" role="tab" data-toggle="tab">Lucr&#259;ri</a></li>
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 tab-content main">
             <div role="tabpanel" class="tab-pane active fade in" id="imagini">
                 <div class="jumbotron">
-                    <h1>Upload imagini</h1><br/>
+                    <h2>Adaug&#259; imagini &#238;n galerie</h2><br/>
                     <hr>
                     <form id="uploadimage" action="" method="post" enctype="multipart/form-data">
                         <div id="image_preview"><img id="previewing" src="img/noimage.png"/></div>
                         <hr id="line">
                         <div id="selectImage">
-                            <label>Select Your Image</label><br/>
+                            <label>Alege fisierul</label><br/>
                             <input type="file" name="file" id="file" required/>
-                            <input type="submit" value="Upload" class="submit"/>
+                            <br>
+                            <button type="submit" class="btn btn-lg btn-default"><i class="fa fa-upload">&nbsp;</i> Urc&#259;</button>
                         </div>
                     </form>
-                    <h4 id='loading' style="display: none">loading..</h4>
+                    <h4 id='loading' style="display: none">se &#238;ncarc&#259;...</h4>
 
                     <div id="message"></div>
                 </div>
             </div>
-            <div role="tabpanel" class="tab-pane fade" id="parola">
-                ...
+            <div role="tabpanel" class="tab-pane fade" id="lucrari">
+                <div class="jumbotron">
+                    <h2>Adaug&#259; lucrari</h2><br/>
+                    <hr>
+                    <textarea id="editor"></textarea>
+                </div>
             </div>
-            <div role="tabpanel" class="tab-pane fade" id="">...</div>
-            <div role="tabpanel" class="tab-pane fade" id="">....</div>
         </div>
     </div>
-</div>
 </body>
 </html>
 <!-- jQuery -->
@@ -104,3 +104,10 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="js/admin.js"></script>
+<script src="ckeditor/ckeditor.js"></script>
+<script src="ckeditor/adapters/jquery.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#editor').ckeditor();
+    })
+</script>
