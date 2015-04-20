@@ -71,7 +71,7 @@
                     <h2>Adaug&#259; imagini &#238;n galerie</h2><br/>
                     <hr>
                     <form id="uploadimage" action="" method="post" enctype="multipart/form-data">
-                        <div id="image_preview"><img id="previewing" src="img/noimage.png"/></div>
+                        <div id="image_preview"><img id="previewing" src="img/noimageplaceholder.png"/></div>
                         <hr id="line">
                         <div id="selectImage">
                             <label>Alege fisierul</label><br/>
