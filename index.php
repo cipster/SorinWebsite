@@ -1,3 +1,9 @@
+<?php
+include_once "php/db/db_connect.php";
+
+session_start();
+session_destroy();
+?>
 <!DOCTYPE html>
 <html lang="en">
 

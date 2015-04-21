@@ -1,5 +1,12 @@
+<?php
+include_once "php/db/db_connect.php";
+session_start();
+if(!isset( $_SESSION['myusername'])){
+    header("location:login.php");
+}
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 
 <head>
     <meta charset="utf-8">
