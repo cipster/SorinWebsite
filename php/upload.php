@@ -2,7 +2,8 @@
 if (isset($_FILES["file"]["type"])) {
     $validextensions = array("jpeg", "jpg", "png", "gif");
     $temporary = preg_split('/\.(?=[^.]*$)/', $_FILES["file"]["name"]);
-    $file_extension = end($temporary);
+    $file_extension = strtolower(end($temporary));
+    $_FILES["file"]["name"] = preg_replace('/[-!$%^&*()_+|~=`{}\[\]:";\'<>?,.\/]/','-', $_FILES["file"]["name"]);
     if ((($_FILES["file"]["type"] == "image/png") || ($_FILES["file"]["type"] == "image/jpg") || ($_FILES["file"]["type"] == "image/jpeg") || ($_FILES["file"]["type"] == "image/gif"))
         && in_array($file_extension, $validextensions) ) {
 

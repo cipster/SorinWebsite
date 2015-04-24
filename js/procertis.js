@@ -18,3 +18,26 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+function hideModal() {
+    $('.modal.in').modal('hide');
+    $('body').removeClass('modal-open');
+    $('.modal-backdrop').remove();
+}
+
+function showNotification(message, type, delay) {
+    if (typeof(delay) === "undefined" || isNaN(delay)) {
+        delay = 5000;
+    }
+    if (typeof(type) === "undefined") {
+        type = 'success';
+    }
+
+    $("#alert").notify({
+        message: {text: message},
+        type: type,
+        closeable: 'true',
+        transition: 'fade',
+        fadeOut: {enabled: true, delay: delay}
+    }).show();
+}

@@ -191,6 +191,12 @@ p.copyright {
     height: auto;
 }
 
+.galery-image-list {
+    width: 30px;
+    height: auto;
+    display: inline !important;
+
+}
 .raindrop {
     width: 30px;
     height: auto;
@@ -310,4 +316,43 @@ section#contact:-ms-input-placeholder {
 
 section#contact .text-danger {
     color: #e74c3c;
+}
+
+.notifications {
+    font-size: 15pt;
+    padding: 15px;
+    position: fixed;
+    top: 15%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* Positioning */
+.notifications.top-right {
+    right: 10px;
+    top: 25px;
+}
+
+.notifications.top-left {
+    left: 10px;
+    top: 25px;
+}
+
+.notifications.bottom-left {
+    left: 10px;
+    bottom: 25px;
+}
+
+.notifications.bottom-right {
+    right: 10px;
+    bottom: 25px;
+}
+
+/* Notification Element */
+.notifications > div {
+    width: 100% !important;
+    position: relative;
+    z-index: 9999;
+    margin: 5px;
 }

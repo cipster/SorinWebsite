@@ -39,7 +39,6 @@ session_destroy();
 
 </head>
 
-
 <body id="page-top" class="index">
 <!-- Navigation -->
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -79,7 +78,6 @@ session_destroy();
     <!-- /.container -->
 </nav>
 
-
 <!-- Header -->
 <header>
     <!--    <div class="container">-->
@@ -96,13 +94,16 @@ session_destroy();
 
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Procertis</h1>
-
-                        <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to
-                            web
-                            browser security rules.</p>
-
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                        <h1>PROCERTIS</h1>
+                        <h3>Proiectare Construc&#539;ii Civile &#x219;i Industriale</h3>
+                        <h3>Dirigen&#539;ie de &#x218;antier pentru Construc&#539;ii Civile &#x219;i Industriale</h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="http://ro.linkedin.com/pub/bucur-portase-sorin-daniel/b3/a98/220/en" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span
+                                        class="network-name">Linkedin</span></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -111,11 +112,16 @@ session_destroy();
 
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Procertis</h1>
-
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                        <h1>PROCERTIS</h1>
+                        <h3>Proiectare Construc&#539;ii Civile &#x219;i Industriale</h3>
+                        <h3>Dirigen&#539;ie de &#x218;antier pentru Construc&#539;ii Civile &#x219;i Industriale</h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="http://ro.linkedin.com/pub/bucur-portase-sorin-daniel/b3/a98/220/en" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span
+                                        class="network-name">Linkedin</span></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -124,11 +130,16 @@ session_destroy();
 
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Procertis</h1>
-
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                        <h1>PROCERTIS</h1>
+                        <h3>Proiectare Construc&#539;ii Civile &#x219;i Industriale</h3>
+                        <h3>Dirigen&#539;ie de &#x218;antier pentru Construc&#539;ii Civile &#x219;i Industriale</h3>
+                        <hr class="intro-divider">
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="#galery" class="btn btn-default btn-lg page-scroll"><i class="fa fa-picture-o fa-fw"></i> <span
+                                        class="network-name">Galerie</span></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -142,29 +153,7 @@ session_destroy();
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <!--        </div>-->
 </header>
-<!--<div class="intro-header">-->
-<!--    <div class="container">-->
-<!--        <div class="row">-->
-<!--            <div class="col-lg-12">-->
-<!--                <div class="intro-message">-->
-<!--                    <h1>PROCERTIS</h1>-->
-<!--                    <h3>Proiectare Construc&#539;ii Civile &#x219;i Industriale</h3>-->
-<!--                    <h3>Dirigen&#539;ie de &#x218;antier pentru Construc&#539;ii Civile &#x219;i Industriale</h3>-->
-<!--                    <hr class="intro-divider">-->
-<!--                    <ul class="list-inline intro-social-buttons">-->
-<!--                        <li>-->
-<!--                            <a href="http://ro.linkedin.com/pub/bucur-portase-sorin-daniel/b3/a98/220/en" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span-->
-<!--                                    class="network-name">Linkedin</span></a>-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-<!-- /.intro-header -->
 
 <!-- Page Content -->
 <a id="services" name="services"></a>
@@ -419,7 +408,7 @@ session_destroy();
         </div>
     </div>
 </div>
-
+<div id="alert" class="notifications"></div>
 </body>
 </html>
 <!-- jQuery -->
@@ -435,6 +424,7 @@ session_destroy();
 <script src="js/blueimp-gallery.min.js"></script>
 <script src="js/bootstrap-image-gallery.min.js"></script>
 <script src="js/demo.js"></script>
+<script src="js/bootstrap-notify.js"></script>
 
 <!-- Contact Form JavaScript -->
 <script src="js/jqBootstrapValidation.js"></script>
