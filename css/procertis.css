@@ -17,12 +17,12 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: /*"Lato",*/ "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
 }
 
 .topnav {
-    font-size: 14px; 
+    font-size: 14px;
 }
 
 .lead {
@@ -52,28 +52,28 @@ li.contact {
 
 }
 
-li.contact>.btn {
+li.contact > .btn {
     width: 300px;
     text-align: left;
 }
 
 .intro-message > h1 {
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     font-size: 5em;
 }
 
 .intro-divider {
     width: 400px;
     border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .intro-message > h3 {
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
     .intro-message {
         padding-bottom: 15%;
     }
@@ -134,7 +134,7 @@ li.contact>.btn {
 
 .banner h2 {
     margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     font-size: 3em;
 }
 
@@ -147,17 +147,17 @@ li.contact>.btn {
     margin-top: 0;
 }
 
-@media(max-width:1199px) {
+@media (max-width: 1199px) {
     ul.banner-social-buttons {
         float: left;
         margin-top: 15px;
     }
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
     .banner h2 {
         margin: 0;
-        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
         font-size: 3em;
     }
 
@@ -197,6 +197,7 @@ p.copyright {
     display: inline !important;
 
 }
+
 .raindrop {
     width: 30px;
     height: auto;
@@ -207,13 +208,12 @@ p.copyright {
     color: #7bc894;
 }
 
-
 .btn-xl {
     padding: 20px 40px;
     border: 2px solid #efc236;
     border-radius: 3px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
@@ -232,7 +232,6 @@ header {
     -o-background-size: cover;
 }
 
-
 section {
     padding: 50px 0;
 }
@@ -248,7 +247,7 @@ section h3.section-subheading {
     text-transform: none;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
     section {
         padding: 75px 0;
     }
@@ -288,28 +287,28 @@ section#contact .form-control:focus {
 
 section#contact::-webkit-input-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact:-moz-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact::-moz-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
     color: #bbb;
 }
 
 section#contact:-ms-input-placeholder {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
     color: #bbb;
 }
@@ -324,6 +323,7 @@ section#contact .text-danger {
     position: fixed;
     top: 15%;
     left: 50%;
+    z-index: 5000;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
@@ -355,4 +355,19 @@ section#contact .text-danger {
     position: relative;
     z-index: 9999;
     margin: 5px;
+}
+
+.large {
+    font-size: 13pt;
+}
+
+.notifications-index {
+    font-size: 14pt;
+    padding: 15px;
+    position: fixed;
+    top: 15%;
+    left: 20%;
+    z-index: 5000;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }

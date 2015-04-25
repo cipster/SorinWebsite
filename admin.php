@@ -27,7 +27,6 @@ if (!isset($_SESSION['myusername'])) {
 
     <!-- Custom Fonts -->
     <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -37,7 +36,7 @@ if (!isset($_SESSION['myusername'])) {
     <![endif]-->
 
 </head>
-<body>
+<body id="page-top">
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -57,13 +56,11 @@ if (!isset($_SESSION['myusername'])) {
                     <a href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="index.php">&#206;napoi la site</a>
+                    <a class="page-scroll" href="/">&#206;napoi la site</a>
                 </li>
             </ul>
         </div>
-        <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container -->
 </nav>
 <div class="container-fluid">
     <div class="row">
@@ -71,6 +68,7 @@ if (!isset($_SESSION['myusername'])) {
             <ul class="nav nav-pills nav-stacked" style="font-size: 14pt;">
                 <li role="presentation" class="active"><a href="#imagini" aria-controls="imagini" role="tab" data-toggle="tab">Galerie</a></li>
                 <li role="presentation"><a href="#lucrari" aria-controls="lucrari" role="tab" data-toggle="tab">Lucr&#259;ri</a></li>
+                <li role="presentation"><a href="#news" aria-controls="news" role="tab" data-toggle="tab">Anunţuri</a></li>
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 tab-content main">
@@ -88,11 +86,26 @@ if (!isset($_SESSION['myusername'])) {
             </div>
             <div role="tabpanel" class="tab-pane fade" id="lucrari">
                 <div class="jumbotron">
-                    <h2>Adaug&#259; lucr&#259;ri</h2><br/>
+                    <h2>Lucr&#259;ri</h2><br/>
                     <hr>
-                    <textarea id="editor"></textarea>
+                    <div class="form-group">
+                        <table id="lucrari-links" width="90%" class="table table-responsive"></table>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#adauga-lucrari"><i class="fa fa-plus-square-o">&nbsp;</i>Adaug&#259; lucr&#259;ri</button>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="news">
+                <div class="jumbotron">
+                    <h2>Anunţuri</h2><br/>
                     <hr>
-                    <button class="btn btn-success btn-lg" onclick="saveLucrare()"><i class="fa fa-plus-square-o">&nbsp;</i>Adaug&#259; lucrare</button>
+                    <div class="form-group">
+                        <table id="news-links" width="90%" class="table table-responsive"></table>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#adauga-news"><i class="fa fa-plus-square-o">&nbsp;</i>Adaug&#259; anunţuri</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -127,35 +140,109 @@ if (!isset($_SESSION['myusername'])) {
             </div>
         </div>
     </div>
-    <?php
-    $filename = $_GET['filename'];
-    $file = $_SERVER['DOCUMENT_ROOT'] . "/upload/$filename";
-    if (is_readable($file)) {
-        if (isset($_GET['filename'])) {
-            if (!unlink($file)) {
-                echo '<div class="col-sm-5 col-sm-offset-3 col-md-4 col-md-offset-2 alert alert-danger">' . "Eroare la stergerea fisierului $filename" . "</div>";
-            } else {
-                echo '<div class="col-sm-5 col-sm-offset-3 col-md-4 col-md-offset-2 alert alert-success">' . "Fisierul $filename a fost sters" . "</div>";
-            }
+
+
+    <div class="modal fade" id="adauga-lucrari">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Adaug&#259; lucrări</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" id="titlu-lucrare" class="form-control" placeholder="introdu titlul">
+                        <hr>
+                        <textarea id="editor" placeholder="introdu continut"></textarea>
+                        <hr>
+                        <button class="btn btn-success btn-lg" onclick="saveLucrare()"><i class="fa fa-plus-square-o">&nbsp;</i>Adaug&#259; lucrare</button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">&#206;nchide</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="adauga-news">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Adaug&#259; anunţ nou</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" id="titlu-news" class="form-control" placeholder="introdu titlul">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="continut-news" class="form-control" rows="10" style="max-width: 100%" placeholder="introdu continut"></textarea>
+                    </div>
+                    <hr>
+                    <button class="btn btn-success btn-lg" onclick="saveNews()"><i class="fa fa-plus-square-o">&nbsp;</i>Adaug&#259; anunţ</button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">&#206;nchide</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php
+$filename = $_GET['filename'];
+$file = $_SERVER['DOCUMENT_ROOT'] . "/upload/$filename";
+if (is_readable($file)) {
+    if (isset($_GET['filename'])) {
+        if (!unlink($file)) {
+            echo '<div class="col-sm-5 col-sm-offset-3 col-md-4 col-md-offset-3 alert alert-danger alert-dismissible fade in">' . "Eroare la stergerea fisierului $filename" . '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
+        } else {
+            echo '<div class="col-sm-5 col-sm-offset-3 col-md-4 col-md-offset-3 alert alert-success alert-dismissible fade in">' . "Fisierul $filename a fost sters" . '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button></div>';
         }
     }
-    ?>
-    <div id="alert" class="notifications"></div>
+}
+?>
+<div id="alert" class="notifications"></div>
 </body>
 </html>
-<!-- jQuery -->
 <script src="js/jquery.js"></script>
 
-<!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 
-<!-- Custom Theme JavaScript -->
 <script src="js/admin.js"></script>
 <script src="js/procertis.js"></script>
 <script src="ckeditor/ckeditor.js"></script>
 <script src="ckeditor/adapters/jquery.js"></script>
 <script src="js/bootstrap-notify.js"></script>
 <script type="text/javascript">
+
+    function insertConfirmModal(id,action) {
+        var idiu = 'esti-sigur' + id
+        var modal = '<div class="modal fade" id="' + idiu + '">'
+            + '<div class="modal-dialog">'
+            + '<div class="modal-content">'
+            + '<div class="modal-header">'
+            + '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>'
+            + '<h4 class="modal-title">Eşti sigur?</h4>'
+            + '</div>'
+            + '<div class="modal-body">'
+            + '<div class="form-group">'
+            + '<span>Eşti sigur?</span>'
+            + '</div>'
+            + '<div class="modal-footer">'
+            + '<button type="button" class="btn btn-success" data-dismiss="modal" onclick="' + action + '"><i class="fa fa-check">&nbsp;</i>Da</button>'
+            + '<button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times">&nbsp;</i>Nu</button>'
+            + '</div>'
+            + '</div>'
+            + '</div>'
+            + '</div>';
+
+        $('body').append(modal);
+        var show = '#' + idiu;
+        $(show).modal('show');
+    }
+
     function getImageList() {
         $.ajax({
             url: "php/galery.php",
@@ -163,37 +250,74 @@ if (!isset($_SESSION['myusername'])) {
             success: function (data) {
                 $('#galery-links').html('');
                 $.each(data, function (i, filename) {
-                    $('#galery-links').append('<tr><td>' + (i + 1) + '</td><td>' + filename + '</td><td><a href="?filename=' + filename + '" class="btn btn-danger btn-sm pull-right delete" >Sterge</a></td></tr>');
+                    $('#galery-links').append('<tr><td>' + (i + 1) + '</td><td>' + filename + '</td><td><a href="?filename=' + filename + '" class="btn btn-danger btn-sm pull-right delete" >Sterge&nbsp;<i class="fa fa-times"></i></a></td></tr>');
                 });
             }
         });
     }
+
+    function getLucrariList() {
+        $.ajax({
+            url: "php/get_lucrari.php",
+            dataType: "json",
+            contentType: 'application/json',
+            mimeType: 'application/json',
+            success: function (data) {
+                $('#lucrari-links').html('');
+                $.each(data, function (i, lucrare) {
+                    $('#lucrari-links').append('<tr><td>' + (i + 1) + '</td><td>' + lucrare.titlu + '</td><td><button id="' + lucrare.id_lucrare + 'lucrare" class="btn btn-danger btn-sm pull-right delete-lucrare" >Şterge&nbsp;<i class="fa fa-times"></i></button></td></tr>');
+                });
+            },
+            error: function (e) {
+                $('#lucrari-links').html('');
+            }
+        });
+    }
+
+    function getAnunturiList() {
+        $.ajax({
+            url: "php/get_anunturi.php",
+            dataType: "json",
+            contentType: 'application/json',
+            mimeType: 'application/json',
+            success: function (data) {
+                $('#news-links').html('');
+                $.each(data, function (i, anunt) {
+                    $('#news-links').append('<tr><td>' + (i + 1) + '</td><td>' + anunt.titlu + '</td><td><button id="' + anunt.id_anunt + 'anunt" class="btn btn-danger btn-sm pull-right delete-anunt" >Şterge&nbsp;<i class="fa fa-times"></i></button></td></tr>');
+                });
+            },
+            error: function (e) {
+                $('#news-links').html('');
+            }
+        });
+    }
+
     function saveLucrare() {
         var continut = CKEDITOR.instances.editor.getData();
-        if (continut.length <= 20) {
-            showNotification("Continut prea putin!", "danger");
+        var titlu = $('#titlu-lucrare').val();
+
+        if (titlu.length <= 3) {
+            showNotification("Titlul trebuie să fie mai lung!", "danger");
             return;
         }
-        var lucrare = '<div class="content-section-a">' +
-            '<div class="container">' +
-            '<div class="row">' +
-            '<div class="col-lg-5 col-sm-6">' +
-            '<hr class="section-heading-spacer">' +
-            '<div class="clearfix"></div>' +
-            continut +
-            '</div></div></div></div>';
+        if (continut.length <= 20) {
+            showNotification("Conţinut prea puţin!", "danger");
+            return;
+        }
 
         $.ajax({
             type: 'post',
             url: 'php/lucrare.php',
             dataType: "json",
-            data: "lucrare=" + lucrare,
+            data: "lucrare=" + continut + "&titlu=" + titlu,
             success: function (response) {
                 response = JSON.parse(response);
                 if (response && response.httpStatus == 500) {
                     showNotification(response.message, "danger");
                 } else {
                     CKEDITOR.instances.editor.setData('');
+                    $('#titlu-lucrare').val('');
+                    hideModal();
                     showNotification(response.message);
                 }
             },
@@ -203,12 +327,126 @@ if (!isset($_SESSION['myusername'])) {
         });
     }
 
+    function saveNews() {
+        var continut = $('#continut-news').val();
+        var titlu = $('#titlu-news').val();
+
+        if (titlu.length <= 3) {
+            showNotification("Titlul trebuie să fie mai lung!", "danger");
+            return;
+        }
+        if (continut.length <= 20) {
+            showNotification("Conţinut prea puţin!", "danger");
+            return;
+        }
+
+        $.ajax({
+            type: 'post',
+            url: 'php/anunt.php',
+            dataType: "json",
+            data: "anunt=" + continut + "&titlu=" + titlu,
+            success: function (response) {
+                response = JSON.parse(response);
+                if (response && response.httpStatus == 500) {
+                    showNotification(response.message, "danger");
+                } else {
+                    $('#continut-news').val('');
+                    $('#titlu-news').val('');
+                    hideModal();
+                    showNotification(response.message);
+                }
+            },
+            error: function (err) {
+                alert('Eroare la conexiune!' + err);
+            }
+        });
+    }
+
+    function stergeLucrare(id) {
+        $.ajax({
+            type: 'post',
+            url: 'php/del_lucrare.php',
+            dataType: "json",
+            data: "lucrare=" + id,
+            success: function (response) {
+                response = JSON.parse(response);
+                if (response && response.httpStatus == 500) {
+                    showNotification(response.message, "danger");
+                } else {
+                    getLucrariList();
+                    showNotification(response.message);
+                }
+            },
+            error: function (err) {
+                alert('Eroare la conexiune!' + err);
+            }
+        });
+    }
+
+    function stergeAnunt(id) {
+        $.ajax({
+            type: 'post',
+            url: 'php/del_anunt.php',
+            dataType: "json",
+            data: "anunt=" + id,
+            success: function (response) {
+                response = JSON.parse(response);
+                if (response && response.httpStatus == 500) {
+                    showNotification(response.message, "danger");
+                } else {
+                    getAnunturiList();
+                    showNotification(response.message);
+                }
+            },
+            error: function (err) {
+                alert('Eroare la conexiune!' + err);
+            }
+        });
+    }
+
+    function stergePoza(id) {
+        $.ajax({
+            type: 'post',
+            url: 'php/del_poza.php',
+            dataType: "json",
+            data: "filename=" + id,
+            success: function (response) {
+                getImageList();
+                showNotification(response);
+            },
+            error: function (err) {
+                showNotification(err, "danger");
+            }
+        });
+    }
+
     $(document).ready(function () {
         $('#editor').ckeditor();
         getImageList();
-
+        getLucrariList();
+        getAnunturiList();
         $('#adauga-poze').on('hidden.bs.modal', function () {
             getImageList();
         });
-    })
+
+        $('#adauga-lucrari').on('hidden.bs.modal', function () {
+            getLucrariList();
+        });
+
+        $('#adauga-news').on('hidden.bs.modal', function () {
+            getAnunturiList();
+        });
+
+        $(document.body).on('click', '.delete-lucrare', function () {
+            var id = parseInt($(this).attr('id'));
+            insertConfirmModal('lucrare','stergeLucrare(' + id + ')');
+        });
+
+        $(document.body).on('click', '.delete-anunt', function () {
+            var id = parseInt($(this).attr('id'));
+            insertConfirmModal('anunt','stergeAnunt(' + id + ')');
+        });
+
+
+    });
 </script>

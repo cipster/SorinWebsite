@@ -11,19 +11,19 @@ if (isset($_FILES["file"]["type"])) {
             echo "Return Code: " . $_FILES["file"]["error"] . "<br/><br/>";
         } else {
             if (file_exists("../upload/" . $_FILES["file"]["name"])) {
-                echo $_FILES["file"]["name"] . " <span id='invalid'><b>exista deja!</b></span> ";
+                echo "<br><span class='alert label-danger large' id='invalid'>" . $_FILES["file"]["name"] . " <b>exista deja!</b></span> ";
             } else {
                 $sourcePath = $_FILES['file']['tmp_name']; // Storing source path of the file in a variable
                 $targetPath = "../upload/" . $_FILES['file']['name']; // Target path where file is to be stored
                 move_uploaded_file($sourcePath, $targetPath); // Moving Uploaded file
-                echo "<span id='success'>Imaginea a fost urcata cu succes...!!</span><br/>";
+                echo "<br><span class='alert label-success large' id='success'>Imaginea a fost urcata cu succes!</span><br/>";
                 echo "<br/><b>Fisierul:</b> " . $_FILES["file"]["name"] . "<br>";
                 echo "<b>Tipul:</b> " . $_FILES["file"]["type"] . "<br>";
                 echo "<b>Marimea:</b> " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
             }
         }
     } else {
-        echo "<span id='invalid'>***Tip de fisier invalid! Nu sunt acceptate decat jpg, jpeg, png si gif***<span>";
+        echo "<br><span class='alert label-danger large' id='invalid'>***Tip de fisier invalid! Nu sunt acceptate decat jpg, jpeg, png si gif***<span>";
     }
 }
 ?>

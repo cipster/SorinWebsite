@@ -8,15 +8,12 @@ $port = "3306";
 $connect = mysqli_connect($host, $user, $password, $dbname, $port)
 or die ('Could not connect to the database server' . mysqli_connect_error());
 
-$lucrare = $_POST['lucrare'];
-$titlu = $_POST['titlu'];
+$anunt = $_POST['anunt'];
 
-$lucrareHtml = htmlspecialchars($lucrare);
-
-$sql = "INSERT INTO lucrari (lucrare, titlu) VALUES ('" . $lucrareHtml . "','" . $titlu . "')";
+$sql = "DELETE FROM anunturi WHERE id_anunt=$anunt";
 
 if (mysqli_query($connect, $sql)) {
-    $retVal = '{ "message": "Lucrarea a fost adăugată cu succes", "httpStatus": 200}';
+    $retVal = '{ "message": "Anunţul a fost şters cu succes", "httpStatus": 200}';
     echo json_encode($retVal);
 } else {
     $message = "Error: " . $sql . "<br>" . mysqli_error($connect);

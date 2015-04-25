@@ -28,7 +28,6 @@ session_destroy();
 
     <!-- Custom Fonts -->
     <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -73,14 +72,11 @@ session_destroy();
                 </li>
             </ul>
         </div>
-        <!-- /.navbar-collapse -->
     </div>
-    <!-- /.container -->
 </nav>
 
 <!-- Header -->
 <header>
-    <!--    <div class="container">-->
     <div id="carousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -162,15 +158,20 @@ session_destroy();
     <div class="container">
         <div class="row">
             <div class="col-lg-5 col-sm-6">
+                <h2 class="section-heading">Proiectare &#x219;i Expertizare Construc&#539;ii Civile &#x219;i Industriale</h2>
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
-                <h2 class="section-heading">Proiectare &#x219;i Expertizare Construc&#539;ii Civile &#x219;i Industriale</h2>
 
-                <p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <p class="lead">Realizăm proiecte pentru construcţii civile şi industriale şi vă putem pune la dispoziţie următoarele servicii:</p>
+                <ul>
+                    <li>întocmire proiect tehnic.</li>
+                    <li>expertize tehnice ale construcţiilor şi instalaţiilor aferente.</li>
+                    <li>întocmire documentaţie pentru obţinerea de avize solicitate prin Certificatul de Urbanism.</li>
+                    <li>întocmire antemăsurători, caiete de sarcini, evaluare costuri/devize.</li>
+                    <li>întocmire detalii de execuţie.</li>
+                </ul>
+                <p class="lead">Dezvoltarea proiectelor este realizată folosind proiectarea asistată de calculator(<b>CAD</b>), ceea ce scurtează durata de execuţie a proiectului final şi face
+                    posibile rapide modificări ce pot interveni în faza de execuţie efectivă.</p>
             </div>
             <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                 <img class="img-responsive" src="img/ipad.png" alt="" style="margin-top: 15%;">
@@ -185,15 +186,32 @@ session_destroy();
     <div class="container">
         <div class="row">
             <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                <h2 class="section-heading">Dirigen&#539;ie de &#x218;antier pentru Construc&#539;ii Civile &#x219;i Industriale</h2>
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
-                <h2 class="section-heading">Dirigen&#539;ie de &#x218;antier pentru Construc&#539;ii Civile &#x219;i Industriale</h2>
 
-                <p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <p class="lead">Activitatea constă în consultanţă în investiţii şi urmărirea execuţiei lucrărilor pe şantier, prin inspectori autorizaţi şi oferim, in principal:</p>
+                <ol>
+                    <li>Consultanţă în alegerea terenului</li>
+                    <li>Studii de prefezabilitate şi fezabilitate</li>
+                    <li>Verificare de proiecte, conform cerinţelor, astfel:</li>
+                    <ul>
+                        <li>A1; A2 - Rezistenţă şi stabilitatea construcţiei pentru beton şi metal</li>
+                        <li>AF - Rezistenţa şi stabilitatea fundaţiilor</li>
+                        <li>B - Siguranţa în exploatare a constructiei</li>
+                        <li>C - Protecţia la foc a clădirii</li>
+                        <li>D - Sănătatea oamenilor</li>
+                        <li>E - Economia de energie, protecţia termică şi hidro a construcţiei</li>
+                        <li>F - Protecţia de zgomot a construcţiei</li>
+                        <li>A4 - Rezistenţa şi stabilitatea lucrărilor de drumuri şi arcaje</li>
+                        <li>B2 - Siguranţa în exploatare a lucrărilor de drumuri şi parcaje</li>
+                        <li>D2 - Protecţia mediului pentru lucrările de drumuri şi parcaje</li>
+                        <li>Is, It, Ig, Ie -Instalaţii sanitare, termice, gaze, electrice</li>
+                    </ul>
+                    <li>Urmărirea execuţiei lucrărilor pe Şantier prin Dirigiţti de şantier autorizaţi, în conformitate cu legislaţia în vigoare.</li>
+                    <li>Consultanţă în elaborarea de documentaţii pentru obţinerea de fonduri europene şi consultanţă acordată în perioada de implementare a proiectelor, prin personal specializat.
+                    </li>
+                </ol>
             </div>
             <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                 <img class="img-responsive" src="img/dog.png" alt="" style="margin-top: 15%;">
@@ -208,15 +226,15 @@ session_destroy();
     <div class="container">
         <div class="row">
             <div class="col-lg-5 col-sm-6">
+                <h2 class="section-heading">Urm&#259;rire curent&#259; &#238;n Exploatare pentru Construc&#539;ii Civile &#x219;i Industriale</h2>
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
-                <h2 class="section-heading">Urm&#259;rire curent&#259; &#238;n Exploatare pentru Construc&#539;ii Civile &#x219;i Industriale</h2>
 
-                <p class="lead">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <p class="lead">În procesul de interacţiune, în construcţii au loc transformări fizice şi chimice, care se manifestă prin fenomene divers perceptibile şi care permit, prin cunoaştere,
+                    să se stabilească relaţii cauzale şi condiţionale în desfăşurarea lor. Comportarea construcţiilor poate fi considerată ca un mod de manifestare a transformărilor pe care acestea le
+                    parcurg în procesul de interacţiune cu mediul ambiant şi cu ele însele.<br>Scopul urmăririi este prevenirea degradării şi a accidentelor, prin intervenţii efectuate din timp, precum
+                    şi ca urmare a progresului ştiinţei construcţiilor, prin acumularea de date şi valorificarea lor.<br>Urmărirea comportării construcţiilor se realizează prin observare senzorială şi
+                    măsurări şi se valorifică prin interpretarea datelor astfel obţinute în contextul cunoştin- ţelor teoretice existente.</p>
             </div>
             <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                 <img class="img-responsive" src="img/urmarire.jpg" alt="" style="margin-top: 10%;">
@@ -231,9 +249,9 @@ session_destroy();
 
 <div class="content-section-b">
     <div class="container">
+        <h2 class="section-heading">Galerie foto</h2>
         <hr class="section-heading-spacer">
         <div class="clearfix"></div>
-        <h2 class="section-heading">Galerie foto</h2>
         <div id="links"></div>
 
     </div>
@@ -241,25 +259,28 @@ session_destroy();
 
 <a id="lucrari" name="lucrari"></a>
 
-<div class="content-section-b">
+<div class="content-section-a">
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-sm-7 col-md-6">
+            <div class="col-lg-7 col-sm-7 col-md-6">
+                <h2 class="section-heading">S.C&nbsp;PROCERTIS&nbsp;S.R.L&nbsp;este&nbsp;certificat&#259;&nbsp;<code>ISO9001</code></h2>
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
-                <h2 class="section-heading">S.C PROCERTIS S.R.L este certificat&#259; <code>ISO9001</code></h2>
 
                 <p class="lead">Proiectare &#x219;i Expertizare Construc&#539;ii Civile &#x219;i Industriale
                     <br>Dirigen&#539;ie de &#x218;antier pentru Construc&#539;ii Civile &#x219;i Industriale
                     <br>Urm&#259;rire curent&#259; &#238;n Exploatare pentru Construc&#539;ii Civile &#x219;i Industriale.</p>
             </div>
-            <div class="col-lg-4 col-lg-offset-2 col-sm-5" style="margin-top: 3%;">
+            <div class="col-lg-3 col-lg-offset-2 col-sm-5" style="margin-top: 3%;">
                 <img class="img-responsive" src="img/iso9001.png" alt="ISO9001">
             </div>
         </div>
     </div>
     <!-- /.container -->
 </div>
+
+<div id="lucrari-links"></div>
+
 <!-- /.content-section-b -->
 <a id="contact" name="contact"></a>
 
@@ -297,7 +318,7 @@ session_destroy();
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Pune o &#238;ntrebare</h2>
+                <h2 class="section-heading">Trimite un mesaj</h2>
 
                 <h3 class="section-subheading text-muted">Afl&#259; mai multe de la noi trimi&#539;&#226;nd un mesaj</h3>
             </div>
@@ -362,12 +383,14 @@ session_destroy();
                     </li>
                     <li class="footer-menu-divider">&sdot;</li>
                     <li>
+                        <a class="page-scroll" href="#lucrari">Lucr&#259;ri</a>
+                    </li>
+                    <li class="footer-menu-divider">&sdot;</li>
+                    <li>
                         <a class="page-scroll" href="#galery">Contact</a>
                     </li>
                 </ul>
-                <p class="copyright text-muted small">Copyright &copy; PROCERTIS S.R.L 2005 - <span id="an"></span>. Toate drepturile rezervate
-                    <span class="pull-right">Concep&#539;ie de  <span class="green">Raindrop Solutions&nbsp;</span><img
-                            src="img/raindrop-logo.png" class="raindrop"></span></p>
+                <p class="copyright text-muted small">Copyright &copy; PROCERTIS S.R.L 2005 - <span id="an"></span>. Toate drepturile rezervate&nbsp;<span class="pull-right">Concep&#539;ie de&nbsp;&nbsp;<span class="green">Raindrop Solutions</span>&nbsp;<img src="img/raindrop-logo.png" class="raindrop"></span></p>
             </div>
         </div>
     </div>
@@ -433,6 +456,7 @@ session_destroy();
 <!-- Custom Theme JavaScript -->
 <script src="js/procertis.js"></script>
 <script type="text/javascript">
+
     $(document).ready(function () {
         $('#an').text(new Date().getFullYear());
         $.ajax({
@@ -442,6 +466,47 @@ session_destroy();
 
                 $.each(data, function (i, filename) {
                     $('#links').prepend('<a href="upload/' + filename + '" title="' + filename + '" data-gallery> <img src="upload/' + filename + '" class="galery-image" alt=""> </a>');
+                });
+            }
+        });
+
+        $.ajax({
+            url: "php/get_lucrari.php",
+            dataType: "json",
+            contentType: 'application/json',
+            mimeType: 'application/json',
+            success: function (data) {
+                $.each(data, function (i, lucrare) {
+                    var par = i % 2 == 0;
+                    $('#lucrari-links').prepend('<div class="content-section-' + (par ? 'b' : 'a') + '">' +
+                    '<div class="container">' +
+                    '<div class="row">' +
+                    '<div class="col-lg-10 col-sm-12"><h2 class="section-heading pull-left">' + lucrare.titlu + '</h2>' +
+                    '</div><div class="clearfix"></div>' + lucrare.lucrare + '</div></div></div></div>');
+                });
+            }
+        });
+
+        $.ajax({
+            url: "php/get_anunturi.php",
+            dataType: "json",
+            contentType: 'application/json',
+            mimeType: 'application/json',
+            success: function (data) {
+                $.each(data, function (i, anunt) {
+                    var id = anunt.titlu.replace(/ /g,'');
+                    var selector = '#' + id;
+                    var alert = '<div id="' + id + '" class="notifications-index"></div>';
+                    var message = '<b>' + anunt.titlu + '</b><hr><p>' + anunt.anunt + '</p>';
+                    $('body').append(alert);
+
+                    $(selector).notify({
+                        message: {html: message},
+                        type: 'warning',
+                        closeable: 'true',
+                        transition: 'fade',
+                        fadeOut: {enabled: false}
+                    }).show();
                 });
             }
         });
