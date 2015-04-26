@@ -79,24 +79,23 @@ session_destroy();
 <header>
     <div id="carousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class=""></li>
-            <li data-target="#carousel" data-slide-to="1" class=""></li>
-            <li data-target="#carousel" data-slide-to="2" class="active"></li>
+        <ol class="carousel-indicators" style="color: #000000!important;">
+            <li data-target="#carousel" style="border: 1px solid #100F0F!important;font-size: 70pt!important;" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" style="border: 1px solid #100F0F!important;font-size: 70pt!important;" data-slide-to="1" class=""></li>
+            <li data-target="#carousel" style="border: 1px solid #100F0F!important;font-size: 70pt!important;" data-slide-to="2" class=""></li>
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="item">
-                <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+                <img class="first-slide" src="img/slide1.jpg" alt="First slide">
 
-                <div class="container">
+                <div class="container" >
                     <div class="carousel-caption">
-                        <h1>PROCERTIS</h1>
-                        <h3>Proiectare Construc&#539;ii Civile &#x219;i Industriale</h3>
-                        <h3>Dirigen&#539;ie de &#x218;antier pentru Construc&#539;ii Civile &#x219;i Industriale</h3>
-                        <hr class="intro-divider">
+                        <h1 style="color: #000000!important;">Dirigen&#539;ie de &#x218;antier pentru Construc&#539;ii Civile &#x219;i Industriale</h1>
+
+                        <hr class="intro-divider" style="color: #000000!important;">
                         <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a href="http://ro.linkedin.com/pub/bucur-portase-sorin-daniel/b3/a98/220/en" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span
+                                <a href="http://ro.linkedin.com/pub/bucur-portase-sorin-daniel/b3/a98/220/en" target="_blank" class="btn btn-primary btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span
                                         class="network-name">Linkedin</span></a>
                             </li>
                         </ul>
@@ -104,35 +103,32 @@ session_destroy();
                 </div>
             </div>
             <div class="item">
-                <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+                <img class="second-slide" src="img/slide2.jpg" alt="Second slide">
 
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>PROCERTIS</h1>
-                        <h3>Proiectare Construc&#539;ii Civile &#x219;i Industriale</h3>
-                        <h3>Dirigen&#539;ie de &#x218;antier pentru Construc&#539;ii Civile &#x219;i Industriale</h3>
+                        <h1 style="color: #000000!important;">Proiectare Construc&#539;ii Civile &#x219;i Industriale</h1>
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a href="http://ro.linkedin.com/pub/bucur-portase-sorin-daniel/b3/a98/220/en" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span
-                                        class="network-name">Linkedin</span></a>
+                                <a href="#services" class="btn btn-warning btn-lg page-scroll"><i class="fa fa-briefcase fa-fw"></i> <span
+                                        class="network-name">Servicii</span></a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="item active">
-                <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+                <img class="third-slide" src="img/slide3.jpg" alt="Third slide">
 
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>PROCERTIS</h1>
-                        <h3>Proiectare Construc&#539;ii Civile &#x219;i Industriale</h3>
-                        <h3>Dirigen&#539;ie de &#x218;antier pentru Construc&#539;ii Civile &#x219;i Industriale</h3>
+                        <h1 style="color: #000000!important;">Urm&#259;rire curent&#259; &#238;n Exploatare pentru Construc&#539;ii Civile &#x219;i Industriale</h1>
+
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a href="#galery" class="btn btn-default btn-lg page-scroll"><i class="fa fa-picture-o fa-fw"></i> <span
+                                <a href="#galery" class="btn btn-success btn-lg page-scroll"><i class="fa fa-picture-o fa-fw"></i> <span
                                         class="network-name">Galerie</span></a>
                             </li>
                         </ul>
@@ -141,11 +137,11 @@ session_destroy();
             </div>
         </div>
         <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span style="font-size: 50pt!important;" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
         <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span style="font-size: 50pt!important;" class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
     </div>
