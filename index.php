@@ -9,11 +9,24 @@ session_destroy();
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
-          content="proiectare expertizare constructii civile industriale dirigentie de santier pentru constructii civile si industriale urmarire curenta in exploatare pentru constructii civile si industriale construction structure analysis">
+          content="Proiectare si expertizare constructii civile si industriale Dirigentie de santier pentru constructii civile si industriale urmarire curenta in exploatare pentru constructii civile si industriale certificat ISO 9001">
     <meta name="author" content="Raindrop Solutions">
+    <meta name="keywords"
+          content="certificat, ISO 9001, diriginte de santier Bucuresti, diriginte de santier, director santier, tarif diriginte de santier, costuri, tarife diriginte santier, preturi diriginte santier, servicii diriginte de santier, inspector de santier, serviciu, conducator santier, calcul constructie, deviz de constructii,proiectare rezistenta, comerciale, proiecte, industriale, cladiri, instalatii, proiectare, constructii, construction, bucuresti, proiectare si expertizare constructii civile si industriale, dirigentie de santier, case, calitate">
+    <meta name="robots" content="INDEX, FOLLOW, ALL">
+    <meta name="revisit-after" content="5 days">
+    <meta name="classification" content="Reference">
+    <meta name="copyright" content="Procertis SRL http://procertis.ro">
+    <meta http-equiv="reply-to" content="procertis2005@gmail.com">
+    <meta name="language" content="ro">
+    <meta name="rating" content="SAFE FOR KIDS">
+    <meta name="subjects" content="Constructii">
+    <meta name="google-site-verification" content="FVCcrJjK_n2_Cf3l5FN7puk953lflNQAZgrwiJnEa5E" />
+    <meta name="distribution" content="global">
+    <meta name="url" content="http://procertis.ro/">
 
     <title>Procertis SRL</title>
 
@@ -88,7 +101,7 @@ session_destroy();
             <div class="item">
                 <img class="first-slide" src="img/slide1.jpg" alt="First slide">
 
-                <div class="container" >
+                <div class="container">
                     <div class="carousel-caption">
                         <h1 style="color: #000000!important;">Dirigen&#539;ie de &#x218;antier pentru Construc&#539;ii Civile &#x219;i Industriale</h1>
 
@@ -228,7 +241,8 @@ session_destroy();
 
                 <p class="lead">În procesul de interacţiune, în construcţii au loc transformări fizice şi chimice, care se manifestă prin fenomene divers perceptibile şi care permit, prin cunoaştere,
                     să se stabilească relaţii cauzale şi condiţionale în desfăşurarea lor. Comportarea construcţiilor poate fi considerată ca un mod de manifestare a transformărilor pe care acestea le
-                    parcurg în procesul de interacţiune cu mediul ambiant şi cu ele însele.<br>Scopul urmăririi este prevenirea degradării şi a accidentelor, prin intervenţii efectuate din timp, precum
+                    parcurg în procesul de interacţiune cu mediul ambiant şi cu ele însele.<br>Scopul urmăririi este prevenirea degradării şi a accidentelor, prin intervenţii efectuate din timp,
+                    precum
                     şi ca urmare a progresului ştiinţei construcţiilor, prin acumularea de date şi valorificarea lor.<br>Urmărirea comportării construcţiilor se realizează prin observare senzorială şi
                     măsurări şi se valorifică prin interpretarea datelor astfel obţinute în contextul cunoştin- ţelor teoretice existente.</p>
             </div>
@@ -386,7 +400,8 @@ session_destroy();
                         <a class="page-scroll" href="#galery">Contact</a>
                     </li>
                 </ul>
-                <p class="copyright text-muted small">Copyright &copy; PROCERTIS S.R.L 2005 - <span id="an"></span>. Toate drepturile rezervate&nbsp;<span class="pull-right">Concep&#539;ie de&nbsp;&nbsp;<span class="green">Raindrop Solutions</span>&nbsp;<img src="img/raindrop-logo.png" class="raindrop"></span></p>
+                <p class="copyright text-muted small">Copyright &copy; PROCERTIS S.R.L 2005 - <span id="an"></span>. Toate drepturile rezervate&nbsp;<span class="pull-right">Concep&#539;ie de&nbsp;&nbsp;<span
+                            class="green">Raindrop Solutions</span>&nbsp;<img src="img/raindrop-logo.png" class="raindrop"></span></p>
             </div>
         </div>
     </div>
@@ -443,7 +458,7 @@ session_destroy();
 <script src="js/blueimp-gallery.min.js"></script>
 <script src="js/bootstrap-image-gallery.min.js"></script>
 <script src="js/demo.js"></script>
-<script src="js/bootstrap-notify.js"></script>
+<script src="js/notify.js"></script>
 
 <!-- Contact Form JavaScript -->
 <script src="js/jqBootstrapValidation.js"></script>
@@ -490,19 +505,52 @@ session_destroy();
             mimeType: 'application/json',
             success: function (data) {
                 $.each(data, function (i, anunt) {
-                    var id = anunt.titlu.replace(/ /g,'');
-                    var selector = '#' + id;
+                    var id = anunt.titlu.replace(/ /g, '');
                     var alert = '<div id="' + id + '" class="notifications-index"></div>';
-                    var message = '<b>' + anunt.titlu + '</b><hr><p>' + anunt.anunt + '</p>';
-                    $('body').append(alert);
-
-                    $(selector).notify({
-                        message: {html: message},
-                        type: 'warning',
-                        closeable: 'true',
-                        transition: 'fade',
-                        fadeOut: {enabled: false}
-                    }).show();
+                    $.notify(
+                        {
+                            // options
+                            icon: 'glyphicon glyphicon-warning-sign',
+                            title: anunt.titlu,
+                            message: anunt.anunt
+                        }, {
+                            // settings
+                            element: 'body',
+                            position: null,
+                            type: "info",
+                            allow_dismiss: true,
+                            newest_on_top: true,
+                            showProgressbar: false,
+                            placement: {
+                                from: "bottom",
+                                align: "left"
+                            },
+                            offset: 60,
+                            spacing: 10,
+                            z_index: 5031,
+                            delay: 0,
+                            mouse_over: null,
+                            animate: {
+                                enter: 'animated fadeInDown',
+                                exit: 'animated fadeOutUp'
+                            },
+                            onShow: null,
+                            onShown: null,
+                            onClose: null,
+                            onClosed: null,
+                            icon_type: 'class',
+                            template: '<div data-notify="container" style="word-break: break-word;" class="col-xs-11 col-sm-4 alert alert-{0}" role="alert">' +
+                            '<button type="button" aria-hidden="true" class="close" data-notify="dismiss">×</button>' +
+                            '<span data-notify="icon"></span> ' +
+                            '<span data-notify="title">{1}</span><br><hr> ' +
+                            '<span data-notify="message">{2}</span>' +
+                            '<div class="progress" data-notify="progressbar">' +
+                            '<div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>' +
+                            '</div>' +
+                            '<a href="{3}" target="{4}" data-notify="url"></a>' +
+                            '</div>'
+                        }
+                    )
                 });
             }
         });

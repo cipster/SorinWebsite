@@ -29,6 +29,7 @@ h6 {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
     font-weight: 400;
+    word-break: break-word;
 }
 
 .intro-header {
@@ -365,9 +366,9 @@ section#contact .text-danger {
     font-size: 14pt;
     padding: 15px;
     position: fixed;
+    word-break: break-all;
     top: 15%;
-    left: 20%;
+    left: 1%;
+    max-width: 50%;
     z-index: 5000;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
 }
