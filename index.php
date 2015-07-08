@@ -41,14 +41,6 @@ session_destroy();
 
     <!-- Custom Fonts -->
     <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
 <body id="page-top" class="index">
@@ -102,50 +94,50 @@ session_destroy();
                 <img class="first-slide" src="img/slide1.jpg" alt="First slide">
 
                 <div class="container">
-                    <div class="carousel-caption">
-                        <h1 style="color: #000000!important;">Dirigen&#539;ie de &#x218;antier pentru Construc&#539;ii Civile &#x219;i Industriale</h1>
-
-                        <hr class="intro-divider" style="color: #000000!important;">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="http://ro.linkedin.com/pub/bucur-portase-sorin-daniel/b3/a98/220/en" target="_blank" class="btn btn-primary btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span
-                                        class="network-name">Linkedin</span></a>
-                            </li>
-                        </ul>
-                    </div>
+<!--                    <div class="carousel-caption">-->
+<!--                        <h1 style="color: #000000!important;">Dirigen&#539;ie de &#x218;antier pentru Construc&#539;ii Civile &#x219;i Industriale</h1>-->
+<!---->
+<!--                        <hr class="intro-divider" style="color: #000000!important;">-->
+<!--                        <ul class="list-inline intro-social-buttons">-->
+<!--                            <li>-->
+<!--                                <a href="http://ro.linkedin.com/pub/bucur-portase-sorin-daniel/b3/a98/220/en" target="_blank" class="btn btn-primary btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span-->
+<!--                                        class="network-name">Linkedin</span></a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
                 </div>
             </div>
             <div class="item">
                 <img class="second-slide" src="img/slide2.jpg" alt="Second slide">
 
                 <div class="container">
-                    <div class="carousel-caption">
-                        <h1 style="color: #000000!important;">Proiectare Construc&#539;ii Civile &#x219;i Industriale</h1>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="#services" class="btn btn-warning btn-lg page-scroll"><i class="fa fa-briefcase fa-fw"></i> <span
-                                        class="network-name">Servicii</span></a>
-                            </li>
-                        </ul>
-                    </div>
+<!--                    <div class="carousel-caption">-->
+<!--                        <h1 style="color: #000000!important;">Proiectare Construc&#539;ii Civile &#x219;i Industriale</h1>-->
+<!--                        <hr class="intro-divider">-->
+<!--                        <ul class="list-inline intro-social-buttons">-->
+<!--                            <li>-->
+<!--                                <a href="#services" class="btn btn-warning btn-lg page-scroll"><i class="fa fa-briefcase fa-fw"></i> <span-->
+<!--                                        class="network-name">Servicii</span></a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
                 </div>
             </div>
             <div class="item active">
                 <img class="third-slide" src="img/slide3.jpg" alt="Third slide">
 
                 <div class="container">
-                    <div class="carousel-caption">
-                        <h1 style="color: #000000!important;">Urm&#259;rire curent&#259; &#238;n Exploatare pentru Construc&#539;ii Civile &#x219;i Industriale</h1>
-
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="#galery" class="btn btn-success btn-lg page-scroll"><i class="fa fa-picture-o fa-fw"></i> <span
-                                        class="network-name">Galerie</span></a>
-                            </li>
-                        </ul>
-                    </div>
+<!--                    <div class="carousel-caption">-->
+<!--                        <h1 style="color: #000000!important;">Urm&#259;rire curent&#259; &#238;n Exploatare pentru Construc&#539;ii Civile &#x219;i Industriale</h1>-->
+<!---->
+<!--                        <hr class="intro-divider">-->
+<!--                        <ul class="list-inline intro-social-buttons">-->
+<!--                            <li>-->
+<!--                                <a href="#galery" class="btn btn-success btn-lg page-scroll"><i class="fa fa-picture-o fa-fw"></i> <span-->
+<!--                                        class="network-name">Galerie</span></a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
                 </div>
             </div>
         </div>
